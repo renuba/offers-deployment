@@ -1,18 +1,12 @@
 # Setting up HTTP(S) Load Balancing for offer-service with Ingress example
 
 This a a helm-chart repo for offers image (renuba/offers-image created using https://github.com/renuba/offers-microservice-spring-boot)
+
 -have a k8s cluster
-
-This directory (helm-chart) contains:
-
-- `basic-ingress.yaml` defines an Ingress resource.
-- `deployment.yaml` defines a Deployment resource.
-- `service.yaml` defines a Service resource that makes the deployment reachable within your cluster.
-- `values.yaml` placeholder values
 
 Steps for deployment:
 
-Way1 (with helm chart)
+Way1 (using helm chart)
 
 This directory (helm-chart) contains:
 
@@ -30,7 +24,7 @@ deployment take some time
 
 5. use external IP address in ingress to access the api for example: http://34.96.125.39/api/v1/offers
 
-Way2 (without helm chart)
+Way2 (without using helm chart)
 
 - `offers-k8s-deployment-demo.yaml` defines an k8s deployment yaml file.
 
