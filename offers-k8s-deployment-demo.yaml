@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: offers-demo-deployment
+  labels:
+    app: offers-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: offers-demo
+  template:
+    metadata:
+      labels:
+        app: offers-demo
+    spec:
+      containers:
+      - name: offers-demo
+        image: renuba/offers-image
+        ports:
+        - containerPort: 1001
